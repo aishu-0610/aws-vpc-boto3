@@ -52,7 +52,6 @@ import httpx
 sys.path.insert(0, os.path.dirname(__file__))
 
 from backend.db import init_db, seed_blocklist, log_query
-from backend.rules_engine import RulesEngine
 
 logging.basicConfig(
     level=logging.INFO,
