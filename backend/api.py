@@ -29,10 +29,10 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import PlainTextResponse
 from pydantic import BaseModel, Field
 
-from db import get_conn, init_db, seed_blocklist, seed_demo_queries
-from rules_engine import RulesEngine
-from tamper_lock import TamperLock, generate_math_challenge
-from analytics import (
+from backend.db import get_conn, init_db, seed_blocklist, seed_demo_queries
+from backend.rules_engine import RulesEngine
+from backend.tamper_lock import TamperLock, generate_math_challenge
+from backend.analytics import (
     get_summary, get_hourly_heatmap, get_daily_trend,
     get_category_breakdown, get_top_domains,
     get_focus_score, get_latency_stats, generate_weekly_report,
